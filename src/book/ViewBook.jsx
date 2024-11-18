@@ -16,14 +16,14 @@ function ViewBook({handleUpdate}) {
 
   return (
     <>
-      <div className="container w-75 ">
-        <h2 className="text-center m-3"><u>Book Records</u></h2>
+      <div className="container w-50 ">
+        <h2 className="text-center m-4"><u>Book Records</u></h2>
         <div className="row justify-content-center my-3">
           {books.map((book) => {
             return (
-              <div className="col-5 my-3" key={book.id}>
-                <div className="card" style={{ width: "18rem" }}>
-                  <div className="card-body">
+              <div className="col-6 my-3" key={book.id}>
+                <div className="card bg-light text-dark border-2 border-dark" style={{ width: "18rem" }}>
+                  <div className="card-body mx-3">
                     <h3 className="card-title">Title : {book.title}</h3>
                     <p className="card-text ">
                       <b>Description : </b>
